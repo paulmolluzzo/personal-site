@@ -1,0 +1,39 @@
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow-y: hidden;
+  z-index: -1;
+  filter: hue-rotate(60deg) saturate(3);
+
+  video {
+    margin-top: -20%;
+    min-width: 100%;
+  }
+
+  .wiggle {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-image: url('../assets/wiggle.svg');
+    background-repeat: repeat;
+    background-size: 40px 100px;
+    animation-name: wiggle;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0.04;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20px -50px;
+  }
+}

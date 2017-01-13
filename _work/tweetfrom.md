@@ -7,4 +7,4 @@ project: https://github.com/paulmolluzzo/tweet_from_meteor
 cta:     "fork that code"
 ---
 
-an open source< twitter application built with meteor
+an open source twitter application built with meteor

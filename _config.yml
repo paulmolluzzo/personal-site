@@ -1,0 +1,23 @@
+# Site settings
+title: Paul Molluzzo
+email: paul@molluzzo.com
+description: Paul Molluzzo is a web creative specializing in consumer web &amp; e-commerce.
+url: "http://paul.molluzzo.com/"
+twitter_username: paulmolluzzo
+github_username: paulmolluzzo
+
+# Build settings
+markdown_ext: "markdown,md"
+markdown: kramdown
+highlighter: pygments
+
+permalink: /:title
+
+exclude: [dist, npm-debug.log, gulpfile.js, logo.png, package.json, README.md]
+
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+collections:
+  - work

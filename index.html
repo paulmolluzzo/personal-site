@@ -1,0 +1,20 @@
+---
+layout: default
+title: "[object Object]"
+permalink: /
+---
+
+<section class="work">
+  {% assign works = (site.work | sort: 'date') %}
+  {% for work in works reversed %}
+    <div class="project">
+      <div class="inner">
+        <h2>{{ work.title }}</h2>
+        <p>{{ work.content }}</p>
+        {% if work.project and work.cta %}
+          <p><a href="{{ work.project }}">{{ work.cta }}</a></p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>

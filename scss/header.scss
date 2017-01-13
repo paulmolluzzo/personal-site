@@ -2,7 +2,7 @@ header {
   color: $white;
   text-align: center;
   margin: 0 auto;
-  letter-spacing: -0.125rem;
+  letter-spacing: -0.1rem;
 
   h1 {
     margin: 0;
@@ -10,11 +10,18 @@ header {
   }
 
   text {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     text-anchor: middle;
     height: 100%;
     @media (min-width: 38em) {
-      font-size: 1.3rem;
+      font-size: 2.5rem;
+    }
+
+    &:nth-of-type(2) {
+      font-size: 2.5rem;
+      @media (min-width: 38em) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

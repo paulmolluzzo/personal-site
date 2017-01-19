@@ -13,7 +13,7 @@ highlighter: pygments
 
 permalink: /:title
 
-exclude: [dist, npm-debug.log, gulpfile.js, logo.png, package.json, README.md]
+exclude: [dist, node_modules, npm-debug.log, gulpfile.js, logo.png, package.json, README.md]
 
 sass:
   sass_dir: _scss

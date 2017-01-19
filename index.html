@@ -7,7 +7,12 @@ permalink: /
 <section class="work">
   {% assign works = (site.work | sort: 'date') %}
   {% for work in works reversed %}
-    <div class="project">
+    <style type="text/css">
+      #{{ work.title | downcase | replace: ' ', '-' }}::before {
+        background-image: url('/assets/work/{{ work.image }}')
+      }
+    </style>
+    <div id="{{ work.title | downcase | replace: ' ', '-' }}" class="project">
       <div class="inner">
         <h2>{{ work.title }}</h2>
         <p>{{ work.content }}</p>

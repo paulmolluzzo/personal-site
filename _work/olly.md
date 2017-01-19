@@ -1,7 +1,7 @@
 ---
 title:  "Olly"
 date:   2015-05-19 21:52:07
-image:  olly2.jpg
+image:  olly.jpg
 tags:   rails e-commerce
 project: https://www.olly.com/
 cta:     "Pop a Vitamin"

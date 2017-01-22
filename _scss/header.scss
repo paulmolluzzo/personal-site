@@ -1,5 +1,6 @@
 header {
   color: $white;
+  font-family: $ravi;
   text-align: center;
   margin: 0 auto;
   letter-spacing: -0.1rem;
@@ -10,17 +11,24 @@ header {
   }
 
   text {
-    font-size: 3.5rem;
+    fill: $white;
+    stroke: $red;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-width: 0.3;
+    stroke-opacity: 0.5;
+    font-size: 2.5rem;
     text-anchor: middle;
     height: 100%;
     @media (min-width: 38em) {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 
     &:nth-of-type(2) {
-      font-size: 2.5rem;
+      stroke: $blue;
+      font-size: 1.5rem;
       @media (min-width: 38em) {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
       }
     }
   }

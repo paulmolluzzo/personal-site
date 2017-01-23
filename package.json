@@ -9,7 +9,7 @@
   "scripts": {
     "build": "jekyll build && gulp",
     "start": "serve dist",
-    "dev": "jekyll serve",
+    "dev": "guard",
     "test": "xo"
   },
   "author": "Paul Molluzzo <paul@molluzzo.com> (http://paul.molluzzo.com)",

@@ -1,0 +1,49 @@
+.sections {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  a {
+    display: block;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  h2 {
+    float: left;
+    width: 50%;
+    margin: 0;
+    line-height: 3rem;
+    text-align: center;
+    &:before, &:after {
+      display: inline-block;
+      content:'';
+      width: 40px;
+      height: 30px;
+      margin-top: 5px;
+      margin-right: 5px;
+      background: url($eyes-svg) no-repeat;
+      background-position: 0 -60px;
+      background-size: 100% auto;
+    }
+  }
+
+  .active {
+    &:before, &:after {
+      background-position: 0 0;
+    }
+  }
+
+  h2:hover {
+
+    span {
+      background-color: $blue;
+      color: $white;
+    }
+    &:before, &:after {
+      background-position: 0 -30px;
+    }
+  }
+}

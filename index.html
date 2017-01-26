@@ -4,6 +4,8 @@ title: "[object Object]"
 permalink: /
 ---
 
+{% include sections.html %}
+
 <section class="work">
   {% assign works = (site.work | sort: 'date') %}
   {% for work in works reversed %}

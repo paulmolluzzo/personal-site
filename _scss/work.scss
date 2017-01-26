@@ -1,14 +1,49 @@
 .work {
   .project {
     position: relative;
+    background-color: $orange;
     display: table;
     width: 100%;
     color: $orange;
-    text-align: center;
+    text-align: left;
     z-index: 1;
-    @media (min-width: 65em) {
-      float: left;
-      width: 50%;
+
+    &:nth-of-type(2n) {
+      background-color: $aqua;
+      h2,
+      p,
+      a {
+        color: $navy;
+      }
+    }
+
+    &:nth-of-type(3n) {
+      background-color: $fuschia;
+    }
+
+    &:nth-of-type(4n) {
+      background-color: $yellow;
+    }
+
+    &:nth-of-type(5n) {
+      background-color: $teal;
+    }
+
+    h2,
+    p,
+    a {
+      color: $white;
+      display: table;
+      width: auto;
+    }
+
+    a {
+      padding: .25rem 1rem;
+      border: 1px solid $orange;
+      border-right: none;
+      border-bottom: none;
+      box-shadow: 5px 5px 0 0 $orange, 10px 10px 0 0 $red;
+      // color: $orange;
     }
 
     &:hover,
@@ -17,19 +52,34 @@
         opacity: 1;
         transition: opacity 0.5s linear;
       }
-    }
 
-    a {
-      padding: .25rem 1rem;
-      border: 1px solid $orange;
-      color: $orange;
+      h2,
+      p,
+      a {
+        background-color: $orange;
+        color: $white;
+      }
+
+      a {
+        background-color: $aqua;
+        color: $navy;
+        border-color: $navy;
+        box-shadow: 5px 5px 0 0 $blue, 10px 10px 0 0 $navy;
+      }
+
+      a:hover {
+        transition: all 0.1s linear;
+        border-width: 5px;
+        box-shadow: 10px 10px 0 0 $blue, 20px 20px 0 0 $navy;
+      }
     }
 
     .inner {
       display: table-cell;
       position: relative;
-      text-align: center;
+      text-align: left;
       vertical-align: middle;
+      padding-left: 1rem;
     }
 
     .project-image {

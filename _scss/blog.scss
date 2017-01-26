@@ -4,7 +4,9 @@
 
 .blog-post {
   margin: 0 auto;
+  width: 90%;
   max-width: 40rem;
+  margin: 0 auto;
 
   h1 {
     display: inline-flex;
@@ -13,7 +15,6 @@
 
   article {
     background: $white;
-
 
     p,
     li {

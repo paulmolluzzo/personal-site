@@ -23,7 +23,7 @@ gulp.task('minify', () => {
 });
 
 gulp.task('assets', () => {
-  return gulp.src('assets/*.*')
+  return gulp.src('assets/**/*.*')
     .pipe(gulp.dest('dist/assets'));
 });
 

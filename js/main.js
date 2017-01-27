@@ -1,7 +1,9 @@
 'use strict';
 
-const wHeight = function() { return window.innerHeight; }
-const wWidth = function() { return window.innerHeight; }
+const wHeight = function () {
+  return window.innerHeight;
+};
+
 const projects = document.getElementsByClassName('project');
 
 function resizeHeader() {
@@ -9,10 +11,10 @@ function resizeHeader() {
 }
 
 function resizeProjectList() {
-  if (projects.length) {
+  if (projects.length > 0) {
     const tempWidth = ((projects[0].offsetWidth * 0.66) - 1).toFixed(0);
 
-    for (var i=0; i < projects.length; i++) {
+    for (var i = 0; i < projects.length; i++) {
       projects[i].style.height = tempWidth + 'px';
     }
   }

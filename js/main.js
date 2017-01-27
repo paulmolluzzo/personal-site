@@ -8,6 +8,11 @@ const projects = document.getElementsByClassName('project');
 
 function resizeHeader() {
   document.querySelector('header').style.height = wHeight() + 'px';
+
+  // fix max-height on header to avoid resizing on iOS
+  if (!document.querySelector('header').style.maxHeight) {
+    document.querySelector('header').style.maxHeight = wHeight() + 'px';
+  }
 }
 
 function resizeProjectList() {

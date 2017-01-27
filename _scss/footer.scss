@@ -1,11 +1,11 @@
 footer {
   position: relative;
   background-image: url('/assets/melting-footer-bg.jpg');
-  background-size: 20%;
+  background-size: cover;
   background-repeat: repeat;
   background-position: 0 0%;
   min-height: 300px;
-  animation-duration: 10s;
+  animation-duration: 600s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: infinite;
@@ -54,9 +54,5 @@ footer {
 
 @keyframes footer {
     0% { background-position: 0 0%; }
-    // 20% { background-position: 0 20%; }
-    // 40% { background-position: 0 40%; }
-    // 60% { background-position: 0 60%; }
-    // 80% { background-position: 0 80%; }
-    100% { background-position: 0 1900%; }
+    100% { background-position: 0 1000rem; }
 }

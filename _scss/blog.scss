@@ -42,17 +42,8 @@
     margin-top: 1.5rem;
 
     a {
-      border: 1px solid $orange;
-      border-right: none;
-      border-bottom: none;
-      box-shadow: 5px 5px 0 0 $orange, 10px 10px 0 0 $red;
+      @extend .hover-link;
       padding: .25rem;
-
-      &:hover {
-        transition: all 0.1s linear;
-        border-width: 5px;
-        box-shadow: 10px 10px 0 0 $aqua, 20px 20px 0 0 $navy;
-      }
     }
   }
 }

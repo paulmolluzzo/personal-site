@@ -1,0 +1,16 @@
+a.hover-link {
+  background-color: $white;
+  color: $blue;
+  border: 1px solid $orange;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 5px 5px 0 0 $orange, 10px 10px 0 0 $red;
+  transition: all 0.1s linear;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+    border-color: $aqua;
+    box-shadow: 15px 15px 0 0 $aqua, 30px 30px 0 0 $navy;
+  }
+}

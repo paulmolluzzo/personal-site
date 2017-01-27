@@ -14,7 +14,7 @@ permalink: /
         <h2>{{ work.title }}</h2>
         <p>{{ work.content }}</p>
         {% if work.project and work.cta %}
-          <p><a href="{{ work.project }}">{{ work.cta }}</a></p>
+          <p><a href="{{ work.project }}" class="hover-link">{{ work.cta }}</a></p>
         {% endif %}
       </div>
       <div class="project-image" style="background-image: url('/assets/work/{{ work.image }}')"></div>

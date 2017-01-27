@@ -18,20 +18,27 @@ footer {
   }
 
   ul {
-    display: flex;
+    display: block;
     margin: 0;
     padding: 1rem;
-    flex-direction: row-reverse;
+    padding-left: 0;
+    flex-direction: row;
+    @media (min-width: 38rem) {
+      display: flex;
+    }
   }
 
   li {
     list-style-type: none;
-    display: inline-flex;
-    margin: 0 1rem;
-
+    display: block;
+    margin: 1rem;
+    @media (min-width: 38rem) {
+      display: inline-flex;
+    }
   }
 
   a {
     @extend .hover-link;
+    display: inline-block;
   }
 }

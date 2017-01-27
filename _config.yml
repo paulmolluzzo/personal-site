@@ -11,7 +11,7 @@ markdown_ext: "markdown,md"
 markdown: kramdown
 highlighter: pygments
 
-permalink: /:title
+permalink: /:title/
 
 exclude: [dist, node_modules, npm-debug.log, gulpfile.js, logo.png, package.json, README.md]
 

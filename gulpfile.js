@@ -6,7 +6,7 @@ const inlinesource = require('gulp-inline-source');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('minify', () => {
-  return gulp.src('_site/*.html')
+  return gulp.src('_site/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true, minifyJS: true}))
     .pipe(inlinesource())
     .pipe(gulp.dest('dist'));

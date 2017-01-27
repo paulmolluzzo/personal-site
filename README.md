@@ -1,19 +1,19 @@
-# ![](./logo.png) Compact
+# ![](./logo.png) Personal Site
 
-Use gulp to process HTML/CSS/JS into a single compressed HTML file for optimized performance.
+Static site built with Jekyll and compacted with Gulp. Modeled after [Compact](https://github.com/nestedobject/compact).
+
+## Setup
+
+You need `ruby` and `bundler` for the Jekyll stuff, `node` and `npm` for the Gulp stuff. You can use the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension to auto-refresh your browser window if you're developing on the site.
+
+Run `bundle install` and then `npm install`.
 
 ## Use
 
-1. Clone the repo without the history: `git clone --depth 1 git@github.com:nestedobject/compact.git`
-2. Go into the directory: `cd gulp-site`
-3. Install deps: `npm install`
-4. Build the site: `npm run build`
-5. Start the server: `npm start`
+1. Build the site: `npm run build`
+3. Start the server: `npm start`
 
-If you're developing on the site:
-
-1. `npm run watch`
-2. `npm run dev`
+If you're developing on the site run `npm run dev` to start a server with `guard` that'll watch for changes to the source code and refresh the browser if you're running the Live Reload extension.
 
 ## Test
 
@@ -21,6 +21,4 @@ If you're developing on the site:
 
 ---
 
-© 2016 Nested Object LLC
-
-MIT License
+© 2017 Paul Molluzzo

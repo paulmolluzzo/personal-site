@@ -5,6 +5,16 @@ const htmlmin = require('gulp-htmlmin');
 const inlinesource = require('gulp-inline-source');
 const autoprefixer = require('gulp-autoprefixer');
 
+gulp.task('prefix', () => {
+  return gulp.src('_site/css/*.css')
+  .pipe(autoprefixer({
+    remove: false,
+    browsers: ['last 2 versions', '> 5%', 'iOS 7'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('_site/css/'));
+});
+
 gulp.task('minify', () => {
   return gulp.src('_site/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true, minifyJS: true}))
@@ -17,6 +27,6 @@ gulp.task('assets', () => {
     .pipe(gulp.dest('dist/assets'));
 });
 
-gulp.task('default', ['minify', 'assets'], () => {
+gulp.task('default', ['prefix', 'minify', 'assets'], () => {
   return;
 });

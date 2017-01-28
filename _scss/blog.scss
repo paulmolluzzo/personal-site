@@ -3,10 +3,15 @@
 }
 
 .blog-post {
+  background-color: $white;
   margin: 0 auto;
-  width: 90%;
-  max-width: 40rem;
-  margin: 0 auto;
+
+  .blog-meta,
+  article {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 
   h1 {
     display: inline-flex;

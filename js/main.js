@@ -4,15 +4,21 @@ const wHeight = function () {
   return window.innerHeight;
 };
 
+const wWidth = function () {
+  return window.wWidth;
+};
+
+const headerAspectRatio = function(windowWidth) {
+  return windowWidth / 2.6;
+}
+
 const projects = document.getElementsByClassName('project');
 
 function resizeHeader() {
   document.querySelector('header').style.height = wHeight() + 'px';
 
-  // fix max-height on header to avoid resizing on iOS
-  if (!document.querySelector('header').style.maxHeight) {
-    document.querySelector('header').style.maxHeight = wHeight() + 'px';
-  }
+  // preserve 2.6:1 width:height aspect ratio on header
+  document.querySelector('header').style.maxHeight = headerAspectRatio(wWidth()) + 'px';
 }
 
 function resizeProjectList() {

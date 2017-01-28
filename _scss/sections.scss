@@ -1,50 +1,56 @@
 .sections {
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: $white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
 
-  a {
-    display: block;
-
-    &:hover {
-      background-color: $blue;
-    }
-  }
-
-  h2 {
-    float: left;
+  li {
+    list-style-type: none;
+    display: inline-flex;
     width: 50%;
-    margin: 0;
-    line-height: 3rem;
     text-align: center;
-    &:before, &:after {
+
+    a {
       display: inline-block;
-      content:'';
-      width: 40px;
-      height: 30px;
-      margin-top: 5px;
-      margin-right: 5px;
-      background: url($eyes-svg) no-repeat;
-      background-position: 0 -60px;
-      background-size: 100% auto;
+      margin: 0 auto;
+      width: 100%;
+
+      &:before,
+      &:after {
+        display: inline-block;
+        content:'';
+        width: 40px;
+        height: 30px;
+        margin: 0.1px 0.5rem 0;
+        background: url($eyes-svg) no-repeat;
+        background-position: 0 -60px;
+        background-size: 100% auto;
+      }
+
+      &:hover {
+        background-color: $blue;
+
+        &::before,
+        &::after {
+          background-position: 0 -30px;
+        }
+      }
+    }
+
+    &.active {
+      ::before,
+      ::after {
+        background-position: 0 0;
+      }
     }
   }
 
-  .active {
-    &:before, &:after {
-      background-position: 0 0;
-    }
-  }
 
-  h2:hover {
 
-    span {
-      background-color: $blue;
-      color: $white;
-    }
-    &:before, &:after {
-      background-position: 0 -30px;
-    }
-  }
 }

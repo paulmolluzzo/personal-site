@@ -1,12 +1,12 @@
-<div class="sections cf">
+<ul class="sections">
   {% if page.permalink == '/' %}
-    <a href="/"><h2 class="active"><span>Work</span></h2></a>
-    <a href="/blog/"><h2><span>Blog</span></h2></a>
+    <li class="active"><a href="/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
   {% elsif page.type == 'not-found' %}
-    <a href="/"><h2><span>Work</span></h2></a>
-    <a href="/blog/"><h2><span>Blog</span></h2></a>
+    <li><a href="/">Work</a></li>
+    <li><a href="/blog/">Blog</a></li>
   {% else %}
-    <a href="/"><h2><span>Work</span></h2></a>
-    <a href="/blog/"><h2 class="active"><span>Blog</span></h2></a>
+    <li><a href="/">Work</a></li>
+    <li class="active"><a href="/blog/">Blog</a></li>
   {% endif %}
-</div>
+</ul>

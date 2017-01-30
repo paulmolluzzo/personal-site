@@ -8,9 +8,9 @@ const wWidth = function () {
   return window.wWidth;
 };
 
-const headerAspectRatio = function(windowWidth) {
+const headerAspectRatio = function (windowWidth) {
   return windowWidth / 2.6;
-}
+};
 
 const projects = document.getElementsByClassName('project');
 

@@ -8,7 +8,7 @@ const wWidth = function () {
   return window.innerWidth;
 };
 
-let lastWidth = wWidth();
+var lastWidth = wWidth();
 
 const updateWindowWidth = function () {
   lastWidth = wWidth();

@@ -7,6 +7,10 @@
   overflow-y: hidden;
   z-index: -1;
   filter: hue-rotate(-35deg) saturate(3);
+  background-image: url('/assets/video-placeholder.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 20%;
 
   video {
     margin-top: -20%;

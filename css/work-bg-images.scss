@@ -1,0 +1,11 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+// loop over all work posts to create BG images
+{% assign works = (site.work | sort: 'date') %}
+{% for work in works reversed %}
+  #{{ work.title | downcase | replace: ' ', '-' }} .project-image {
+    background-image: url('/assets/work/{{ work.image }}');
+  }
+{% endfor %}

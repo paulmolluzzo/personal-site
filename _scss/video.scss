@@ -1,7 +1,6 @@
 .video-container {
   position: absolute;
   width: 100%;
-  height: 100%;
   min-height: 100%;
   top: 0;
   overflow-y: hidden;
@@ -21,7 +20,7 @@
   .wiggle {
     position: absolute;
     width: 100%;
-    height: 30%;
+    min-height: 100%;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB4bWxuczpldj0naHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzJyB2aWV3Qm94PScwIDAgNCAyMCc+ICA8cGF0aCBmaWxsPSdub25lJyBzdHJva2U9JyNmZmYnIHN0cm9rZS13aWR0aD0nMScgZD0nTS41LDAgYyAwLDUsMyw1LDMsMTAgcyAtMyw1LC0zLDEwIGMgMCw1LDMsNSwzLDEwIHMgLTMsNSwtMywxMCcvPjwvc3ZnPg==);
     background-repeat: repeat;
     background-size: 40px 100px;

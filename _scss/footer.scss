@@ -29,7 +29,7 @@ footer {
     display: block;
     margin: 0;
     padding: 1rem;
-    padding-left: 0;
+    padding-left: 0.1rem; // matches the 1.1rem padding left for work and block links
     flex-direction: row;
     @media (min-width: 38rem) {
       display: flex;

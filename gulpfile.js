@@ -27,6 +27,11 @@ gulp.task('assets', () => {
     .pipe(gulp.dest('dist/assets'));
 });
 
-gulp.task('default', ['prefix', 'minify', 'assets'], () => {
+gulp.task('js', () => {
+  return gulp.src('js/*.*')
+    .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('default', ['prefix', 'minify', 'assets', 'js'], () => {
   return;
 });
